@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e5e5e5;
+    padding: 20px;
+}
+
+/* TÍTULO */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* GRID PRINCIPAL */
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+}
+
+/* CAIXAS PADRÃO */
+.box {
+    border: 2px solid #333;
+    padding: 15px;
+    background: #ddd;
+}
+
+/* IMAGEM */
+.imagem-principal {
+    grid-row: span 2;
+    border: 2px solid #333;
+    background: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholder {
+    width: 90%;
+    height: 90%;
+    background: #bbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+/* HISTÓRIA */
+.historia {
+}
+
+/* NUTRICIONAL */
+.nutricional {
+}
+
+/* DESIGNER */
+.designer {
+    grid-column: 1 / 2;
+}
+
+/* ONDE COMPRAR */
+.comprar {
+    grid-column: 2 / 3;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.card {
+    width: 30%;
+    text-align: center;
+    
+}
+
+.card .img {
+    width: 80%;
+    height: 80px; /* IMPORTANTE */
+    background-image: url("loja.png");
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #333;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #999;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #777;
+}
