@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Container base */
+.container {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column; /* mobile-first */
+  gap: 20px;
+}
+
+/* Topo responsivo */
+.topo {
+  width: 100%;
+  padding: 15px;
+}
+
+/* Menu quebra linha no mobile */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Manchete */
+.manchete img {
+  width: 100%;
+}
+
+/* Remove larguras fixas das colunas */
+.manchete,
+.coluna-esquerda,
+.coluna-central,
+.coluna-direita {
+  width: 100%;
+}
+
+/* Publicidade ajustável */
+.publicidade {
+  width: 100%;
+  height: auto;
+  padding: 40px 10px;
+  line-height: normal;
+}
+
+/* 🔥 Tablet */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .manchete {
+    width: 100%;
+  }
+
+  .coluna-esquerda {
+    width: 60%;
+  }
+
+  .coluna-central {
+    width: 35%;
+  }
+
+  .coluna-direita {
+    width: 100%;
+  }
+}
+
+/* 💻 Desktop */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    flex-wrap: nowrap;
+  }
+
+  .manchete {
+    width: 50%;
+  }
+
+  .coluna-esquerda {
+    width: 25%;
+  }
+
+  .coluna-central {
+    width: 15%;
+  }
+
+  .coluna-direita {
+    width: 20%;
+  }
+
+  .topo {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
