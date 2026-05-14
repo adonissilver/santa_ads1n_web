@@ -1,0 +1,38 @@
+body{
+    font-family:Arial;
+    background:#ffeef2;
+    padding:20px;
+}
+
+.layout{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+.principal{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    min-height:300px;
+}
+
+.mini{
+    background:#ffb3c1;
+    padding:20px;
+    border-radius:10px;
+    cursor:pointer;
+    text-align:center;
+}
+
+.mini:hover{
+    transform:scale(1.03);
+}
+
+@media(min-width:768px){
+
+    .layout{
+        grid-template-columns:2fr 1fr;
+    }
+
+}
